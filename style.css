@@ -1,0 +1,42 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 100px;
+}
+
+.container {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #f6bd60;
+    /* flex */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .box {
+    width: 100px;
+    height: 100px;
+}
+.box.pink {
+    background-color: #f28482;
+}
+.box.green {
+    background-color: #84a59d;
+}
+.box.orange {
+    background-color: #e76f51;
+}
+
+
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+}
